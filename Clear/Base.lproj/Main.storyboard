@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="t7f-em-kri" id="vMr-ae-46b"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Clear" id="LdV-qQ-34A"/>
+                    <navigationItem key="navigationItem" title="Clear" id="LdV-qQ-34A">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="heX-HQ-6iZ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="t7f-em-kri" id="wl4-8H-vL1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYF-72-WEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,6 +53,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ycB-DU-bFs">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
